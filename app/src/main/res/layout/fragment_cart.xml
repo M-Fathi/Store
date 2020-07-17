@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    android:orientation="vertical"
+    tools:context=".ui.Cart_Fragment"
+   >
+
+    <ScrollView
+        android:id="@+id/scrollView_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:layout_above="@+id/ll_cart_1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:elevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Cart"
+                    android:textColor="@color/color_OnBackground"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/b_koodak_bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                   />
+            </LinearLayout>
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rv_Cart_Page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:background="?android:attr/selectableItemBackground"
+               />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:elevation="5dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_error_outline_24"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info"
+                android:layout_marginStart="5dp"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+           <!-- <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/digipay50"
+                android:scaleType="centerCrop"/>-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ersal_raygan50"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_cart_1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="#f0f0f0"
+        android:padding="10dp"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="?android:actionBarSize">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continue_cart"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="ادامه فرایند خرید"
+            android:background="@color/colorError"
+            style="@style/Widget.MaterialComponents.Button"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/b_koodak_bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_totalPrice"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="109000"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_OnSurface"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:fontFamily="@font/b_koodak_bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:gravity="center|right"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="@string/toman"
+            android:textSize="18sp"
+            android:textColor="@color/color_OnSurface"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

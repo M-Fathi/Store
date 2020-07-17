@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Store</string>
+    <string name="Cart">سبد خرید</string>
+    <string name="category">دسته بندی</string>
+    <string name="search">جستجو</string>
+    <string name="shoping_list">لیست خرید</string>
+    <string name="home">خانه</string>
+    <string name="myProfile">پروفایل من</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_cart__fragment">Cart_Fragment</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="Search">جستجو در دیجیکالا</string>
+    <string name="password">کلمه عبور خود را وارد کنید</string>
+    <string name="username">پست الکترونیک یا شماره موبایل</string>
+    <string name="login">ورود به حساب کاربری</string>
+    <string name="signup">ساخت حساب کاربری جدید</string>
+    <string name="forgot_pass">رمز خود را فراموش کرده اید؟</string>
+    <string name="policy">با ورود به و یا ثبت نام در دیجی کالا شما شرایط و قوانین استفاده از سرویس های سایت دیجی کالا و قوانین حریم خصوصی آن را می پذیرید.</string>
+    <string name="surename">نام و نام خانوادگی</string>
+    <string name="profile_change">تغییر مشخصات</string>
+    <string name="AddedToCart">کالا به سبد خرید شما اضافه شد</string>
+    <string name="toman">تومان</string>
+    <string name="info">کالاهای موجود در سبد خرید شما ثبت و رزرو نشده اند. برای ثبت سفارش مراحل بعدی را تکمیل کنید.</string>
+    <string name="delete">حذف</string>
+    <string name="brand_name">نام برند</string>
+    <string name="noInternet">اینترنت دستگاه شما قطع می باشد</string>
+    <string name="error_duplicate_Insert">این محصول قبلا به لیست خرید اضافه شده است</string>
+    <string name="back_again_to_exit">جهت خروج مجدد روی دکمه بازگشت کلیک کنید</string>
+    <string name="connection_problem">ارتباط با سرور دچار اختلال شده است</string>
+    <string name="special_offer">فروش ویژه</string>
+    <string name="super_market">سوپر مارکت</string>
+    <string name="mode">مد و پوشاک</string>
+    <string name="clothes">کالای دیجیتال</string>
+    <string name="cridit">خرید شارژ</string>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/re_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_cardView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="0dp" />
+
+            <TextView
+                android:id="@+id/tv_recyclerItem_Cart_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="8dp"
+                android:layout_below="@+id/ll_cart_delete"
+                android:layout_toLeftOf="@id/img_cardView"
+                android:fontFamily="@font/b_koodak_bold"
+                android:text="پایه نگهدارنده شارژر"
+                android:textColor="@color/color_OnBackground"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_cart_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:background="?android:attr/selectableItemBackground">
+            <TextView
+                android:layout_toRightOf="@+id/img_delete_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:layout_marginStart="5dp"
+                android:layout_alignBottom="@+id/img_delete_item"
+                android:fontFamily="@font/b_koodak_bold"
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/img_delete_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_outline_delete_forever_24"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_recyclerItem_Cart_title"
+                android:layout_toLeftOf="@id/img_cardView"
+                android:text="گروه : "
+                android:textColor="@color/color_OnBackground"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/b_mitra"
+                />
+
+            <TextView
+                android:id="@+id/tv_recyclerItem_Cart_category1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_recyclerItem_Cart_title"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toLeftOf="@id/tv_group"
+                android:fontFamily="@font/b_mitra"
+                android:text="پایه نگهدارنده شارژر"
+                android:textColor="@color/color_OnBackground"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/llAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_cardView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/card_add"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+
+                    android:src="@drawable/ic_outline_add_24"
+                    android:tint="@color/colorError"
+                    android:background="?android:attr/selectableItemBackground"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_recyclerItem_Cart_num"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/colorError" />
+
+                <ImageButton
+                    android:id="@+id/card_minus"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_baseline_remove_24"
+                    android:tint="@color/colorError" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/llAdd"
+                android:layout_toLeftOf="@id/img_cardView"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/b_koodak_bold"
+                    android:text="تومان"
+                    android:textColor="@color/color_OnBackground"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_recyclerItem_Cart_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/b_koodak_bold"
+                    android:text="12525"
+                    android:textColor="@color/color_OnBackground"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_below="@+id/llAdd"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9E9A9A"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Category_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rec_shape"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_outline_search_24"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:text="@string/Search"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/laptop_banner50"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لپ تاپ و الترابوک"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_OnBackground"
+                android:textSize="20sp"
+                android:fontFamily="@font/b_koodak_bold"/>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_Cat_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:scrollbars="horizontal"
+                android:paddingRight="5dp"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/banner_speaker"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آموزش نرم افزار"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_OnBackground"
+                android:textSize="20sp"
+                android:fontFamily="@font/b_koodak_bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_Cat_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:scrollbars="horizontal"
+                android:paddingRight="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/banner_headphone50"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="گوشی موبایل"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_OnBackground"
+                android:textSize="20sp"
+                android:fontFamily="@font/b_koodak_bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_Cat_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:scrollbars="horizontal"
+                android:paddingRight="5dp"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <ImageView
+                android:id="@+id/img_gardoone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/digi_banner6"
+    android:scaleType="centerCrop"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#C1C0B6"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.ProductDetails">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:background="@color/colorSurface"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="50dp"
+                android:layout_height="?attr/actionBarSize"
+                android:scaleType="center"
+                android:src="@drawable/ic_baseline_close_24"
+                android:onClick="btn_close"
+                />
+
+            <ImageView
+                android:id="@+id/img_favorite"
+                android:layout_width="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="?attr/actionBarSize"
+                android:scaleType="center"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_outline_favorite_border_24"
+                android:onClick="btn_favorite"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        android:id="@+id/tv_brand_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/brand_name"
+                        android:textColor="#00BCD4"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_name_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="نام محصول"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_OnBackground"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/b_roya"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#787676" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="رنگ:"
+                            android:textColor="@color/color_OnBackground"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="مشکی"
+                            android:textColor="@color/color_OnBackground"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_seller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="فروشنده"
+                        android:textColor="@color/color_OnBackground"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/b_mitra"/>
+
+                    <ImageView
+                        android:id="@+id/img_seller"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/tv_seller"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_outline_storefront_24" />
+
+                    <LinearLayout
+                        android:id="@+id/LL_sellerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_seller"
+                        android:layout_alignBaseline="@+id/img_seller"
+                        android:layout_alignTop="@+id/img_seller"
+                        android:layout_marginStart="10dp"
+                        android:layout_toLeftOf="@id/img_seller"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="نام فروشنده"
+                            android:textColor="@color/color_OnBackground"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="عملکرد فروشنده 4.6 از 5  | 85.6 درصد رضایت از کالا"
+                            android:textColor="@color/color_OnSurface_light"
+                            android:textDirection="rtl"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/b_mitra"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/LL_sellerName"
+                        android:layout_alignTop="@id/LL_sellerName"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+                    <TextView
+                        android:id="@+id/line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/LL_sellerName"
+                        android:layout_margin="10dp"
+                        android:background="@color/color_OnBackground" />
+
+                    <ImageView
+                        android:id="@+id/img_garranty"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/line4"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_outline_check_circle_24" />
+
+                    <TextView
+                        android:id="@+id/tv_garranty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/img_garranty"
+                        android:layout_marginStart="10dp"
+                        android:layout_toLeftOf="@id/img_garranty"
+                        android:text="گارانتی 18 ماهه ایده پردازان تجارت خاورمیانه"
+                        android:textColor="@color/color_OnBackground"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/b_mitra"/>
+
+                    <TextView
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tv_garranty"
+                        android:layout_margin="15dp"
+                        android:background="@color/color_OnBackground" />
+
+
+                    <ImageView
+                        android:id="@+id/img_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/line2"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_outline_featured_play_list_24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/img_1"
+                        android:layout_marginStart="10dp"
+                        android:layout_toLeftOf="@id/img_1"
+                        android:text="تامین کالا از 1 روز کاری آینده"
+                        android:textColor="@color/color_OnBackground"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/b_mitra"
+                        />
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_coin"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/coin1" />
+
+                    <TextView
+                        android:id="@+id/tv_coin"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/img_coin"
+                        android:text="با خرید این محصول شما"
+                        android:textSize="15sp"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/img_coin"
+                        android:layout_marginBottom="15dp"
+                        android:text="150 امیتاز در دیجی کلاب دریافت می کنید"
+                        android:textColor="@color/color_OnSurface"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/b_koodak_bold"
+                        android:layout_marginStart="10dp"/>
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="#f0f0f0"
+        android:padding="10dp"
+        android:gravity="center"
+        android:elevation="10dp"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="افزودن به سبد خرید"
+            android:background="@color/colorError"
+            style="@style/Widget.MaterialComponents.Button"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="addToCart"
+            android:fontFamily="@font/b_koodak_bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_price_detail"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="109000"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_OnSurface"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:fontFamily="@font/b_koodak_bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:gravity="center|right"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="@string/toman"
+            android:textSize="18sp"
+            android:textColor="@color/color_OnSurface"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

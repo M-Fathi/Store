@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?android:actionBarSize"
+    tools:context=".ui.Home_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/rec_shape"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_outline_search_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center"
+                    android:text="@string/Search"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/rec_shape" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:foregroundTint="@color/colorError"
+                        android:src="@drawable/table_discount_new" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:padding="8dp"
+                        android:src="@drawable/table_super_market" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:padding="8dp"
+                        android:src="@drawable/table_clothe1" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:padding="8dp"
+                        android:src="@drawable/table_digital_shop" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:padding="8dp"
+                        android:src="@drawable/table_wallet" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_marginStart="2dp"
+                        android:gravity="center"
+                        android:text="@string/special_offer" />
+
+                    <TextView
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:gravity="center"
+                        android:text="@string/super_market" />
+
+                    <TextView
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:gravity="center"
+                        android:text="@string/mode" />
+
+                    <TextView
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:gravity="center"
+                        android:text="@string/clothes" />
+
+                    <TextView
+                        android:layout_marginStart="2dp"
+                        android:gravity="center"
+                        android:text="@string/cridit" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F50057"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="280dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@drawable/slider_banner"
+                    android:scaleType="fitCenter" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_Home_frag_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F50057"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:scrollbars="horizontal"></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/digikala_banner_1" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/asus_laptop" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/digi_style1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/digistyle3" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/mobile2" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kid_cloth"
+                android:scaleType="centerCrop"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
